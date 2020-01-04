@@ -7,7 +7,7 @@ export const SignOut = props => {
   useEffect(() => {
     document.title = 'Sign Out'
     props.receiveSignoutSuccess()
-  }, [])
+  }, [props])
   return <React.Fragment />
 }
 

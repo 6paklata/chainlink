@@ -17,7 +17,7 @@ export const Configuration = props => {
   useEffect(() => {
     document.title = 'Configuration'
     props.fetchConfiguration()
-  }, [])
+  }, [props])
 
   return (
     <Content>

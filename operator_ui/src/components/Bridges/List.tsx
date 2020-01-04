@@ -81,15 +81,16 @@ export const BridgeList = (props: Props) => {
     pageSize,
     fetching,
     error,
+    match,
   } = props
   const [page, setPage] = useState(FIRST_PAGE)
 
   useEffect(() => {
     const queryPage =
-      (props.match && parseInt(props.match.params.bridgePage, 10)) || FIRST_PAGE
+      (match && parseInt(match.params.bridgePage, 10)) || FIRST_PAGE
     setPage(queryPage)
     fetchBridges(queryPage, pageSize)
-  }, [])
+  }, [fetchBridges, pageSize, match])
 
   const handleChangePage = (_: never, page: React.SetStateAction<number>) => {
     fetchBridges(page, pageSize)

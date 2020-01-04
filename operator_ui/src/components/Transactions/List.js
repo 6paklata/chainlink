@@ -66,7 +66,7 @@ export const List = props => {
       FIRST_PAGE
     setPage(queryPage)
     fetchTransactions(queryPage, pageSize)
-  }, [])
+  }, [fetchTransactions, pageSize, props.match])
 
   const handleChangePage = (e, page) => {
     fetchTransactions(page, pageSize)

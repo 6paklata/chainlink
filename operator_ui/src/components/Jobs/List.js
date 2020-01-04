@@ -69,7 +69,7 @@ export const List = props => {
       (props.match && parseInt(props.match.params.jobPage, 10)) || FIRST_PAGE
     setPage(queryPage)
     fetchJobs(queryPage, pageSize)
-  }, [])
+  }, [fetchJobs, pageSize, props.match])
 
   const handleChangePage = (e, page) => {
     fetchJobs(page, pageSize)

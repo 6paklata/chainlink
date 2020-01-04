@@ -24,7 +24,7 @@ export const Index = props => {
     props.fetchAccountBalance()
     props.fetchRecentJobRuns(props.recentJobRunsCount)
     props.fetchRecentlyCreatedJobs(props.recentlyCreatedPageSize)
-  }, [])
+  }, [props])
 
   return (
     <Content>

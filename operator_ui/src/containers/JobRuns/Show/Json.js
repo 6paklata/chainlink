@@ -32,7 +32,7 @@ const renderDetails = ({ fetching, jobRun }) => {
 const Show = props => {
   useEffect(() => {
     props.fetchJobRun(props.jobRunId)
-  }, [])
+  }, [props])
 
   return (
     <div>

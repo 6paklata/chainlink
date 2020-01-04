@@ -10,7 +10,7 @@ import matchRouteAndMapDispatchToProps from 'utils/matchRouteAndMapDispatchToPro
 export const Show = props => {
   useEffect(() => {
     props.fetchTransaction(props.transactionId)
-  }, [])
+  }, [props])
   const { transaction } = props
 
   return (

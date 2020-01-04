@@ -41,7 +41,7 @@ export const Show = props => {
   useEffect(() => {
     document.title = 'Show Job Run'
     props.fetchJobRun(props.jobRunId)
-  }, [])
+  }, [props])
 
   return (
     <div>

@@ -28,7 +28,7 @@ export const Edit = props => {
     document.title = 'Edit Bridge'
     const { fetchBridgeSpec, match } = props
     fetchBridgeSpec(match.params.bridgeId)
-  }, [])
+  }, [props])
   const { bridge, updateBridge } = props
   const checkLoaded = () => bridge
   const onLoad = buildLoadedComponent => {

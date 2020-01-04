@@ -81,7 +81,7 @@ export const Index = props => {
       : FIRST_PAGE
     setPage(queryPage)
     fetchJobRuns({ jobSpecId, page: queryPage, size: pageSize })
-  }, [])
+  }, [fetchJobRuns, jobSpecId, pageSize, props.match])
   const handleChangePage = (_, pageNum) => {
     fetchJobRuns({ jobSpecId, page: pageNum, size: pageSize })
     setPage(pageNum)
