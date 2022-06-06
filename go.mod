@@ -57,7 +57,7 @@ require (
 	github.com/spf13/viper v1.6.1
 	github.com/stretchr/testify v1.4.0
 	github.com/tevino/abool v0.0.0-20170917061928-9b9efcf221b5
-	github.com/tidwall/gjson v1.3.5
+	github.com/tidwall/gjson v1.9.3
 	github.com/tidwall/sjson v1.0.4
 	github.com/ugorji/go/codec v1.1.7
 	github.com/ulule/limiter v0.0.0-20190417201358-7873d115fc4e
